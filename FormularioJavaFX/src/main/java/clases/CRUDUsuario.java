@@ -34,7 +34,7 @@ public class CRUDUsuario {
             
                   
             ps.executeUpdate();
-            javax.swing.JOptionPane.showMessageDialog(null, "Usuario Insertado CORRECTAMENTE"); //EN VEZ DE JOptionPane, SCENE BUILDER
+            //javax.swing.JOptionPane.showMessageDialog(null, "Usuario Insertado CORRECTAMENTE"); //EN VEZ DE JOptionPane, SCENE BUILDER
             
         } catch (SQLException ex) {
             System.out.print("ERROR AL INSERTAR");
@@ -65,13 +65,13 @@ public class CRUDUsuario {
                 }
                 if(encontrado)
                      System.out.println(u.toString());
-                else
-                      javax.swing.JOptionPane.showMessageDialog(null, "Usuario NO ENCONTRADO"); //METER CON SCENE BUILDER
+                //else
+                  //   javax.swing.JOptionPane.showMessageDialog(null, "Usuario NO ENCONTRADO"); //METER CON SCENE BUILDER
                 
         }
         catch(SQLException ex)
          {
-             javax.swing.JOptionPane.showMessageDialog(null, ex.toString()); //METER EN SCENE BUILDER
+         //    javax.swing.JOptionPane.showMessageDialog(null, ex.toString()); //METER EN SCENE BUILDER
             
          }
       
@@ -103,12 +103,12 @@ public class CRUDUsuario {
                   
                 }
                 
-                      javax.swing.JOptionPane.showMessageDialog(null, "Total Ingresos : "+(total_ingresos-total_descuentos)); //METER EN SCENE BUILDER
+                    //  javax.swing.JOptionPane.showMessageDialog(null, "Total Ingresos : "+(total_ingresos-total_descuentos)); //METER EN SCENE BUILDER
                 
         }
         catch(SQLException ex)
          {
-             javax.swing.JOptionPane.showMessageDialog(null, ex.toString()); //METER EN SCENE BUILDER
+             //javax.swing.JOptionPane.showMessageDialog(null, ex.toString()); //METER EN SCENE BUILDER
             
          }
     }
